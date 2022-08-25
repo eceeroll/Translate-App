@@ -40,7 +40,7 @@ async function getDataFromAPI(url){
 }
 
 translateButton.addEventListener("click", () => {
-    let fromText = fromInput.value,
+    let fromText = fromInput.value != "" ? fromInput.value : null,
     translateFrom = selectTags[0].value,
     translateTo = selectTags[1].value;
 
